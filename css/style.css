@@ -14,6 +14,8 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 h1, h2, h3, h4 {
@@ -97,19 +99,32 @@ a:active {
   text-decoration: none;
 }
 
-  /* SECONDARY */
-  .button.contact {
+/* SECONDARY */
+.button.contact {
   background-color: transparent;
   color: #ff7f50 !important;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff !important;
 }
+
 .button.contact:active {
   background-color: #000000;
   color: #ffffff !important;
   border: 2px solid #D8D8D8;
+}
+
+/* LOGO STYLING */
+.logo {
+  width: 30%;
+}
+
+/* ICON STYLING */
+  /*SOCILA MEDIA*/
+  .social_icon {
+    width: 50px !important;
 }
