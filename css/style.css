@@ -78,7 +78,7 @@ a:active {
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   border-bottom: 3px solid #994c30;
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -95,4 +95,21 @@ a:active {
   background-color: #000000;
   border-bottom: 3px solid #000000;
   text-decoration: none;
+}
+
+  /* SECONDARY */
+  .button.contact {
+  background-color: transparent;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+}
+.button.contact:active {
+  background-color: #000000;
+  color: #ffffff !important;
+  border: 2px solid #D8D8D8;
 }
