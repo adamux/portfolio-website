@@ -3,7 +3,11 @@ Colors used:
   Primary Colors
   Black:  #000000
   Lime Green: #CCDC04
+
+  Secondary Colors
+  Dark Green: #A7B400
   */
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -48,25 +52,29 @@ img {
 
 /* LINK BEHAVIOUR START */
 a {
-  color: #ff7f50;
+  color: #A7B400;
   text-decoration: none;
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: #A7B400;
 }
 
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #CCDC04;
   text-decoration: underline;
 }
 
 a:active {
   /* selected link */
-  color: #994c30;
+  color: #CCDC04;
+}
+/* SECTIONING & PARALAX */
+.highlight{
+  border-top: 5px solid #000000;
 }
 
 /* LINK BEHVAIOUR END */
@@ -75,47 +83,52 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff !important;
+  background-color: #FFFFFF;
+  color: #000000 !important;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
-  border-bottom: 3px solid #994c30;
-  /* width of the border, type, color */
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  text-decoration:
+
+    /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  background-color: #000000;
+  color: #FFFFFF !important;
+
 }
 
 .button:active {
-  opacity: 1;
-  background-color: #000000;
-  border-bottom: 3px solid #000000;
   text-decoration: none;
+  background-color: #CCDC04;
+  border-style: none;
+  color: #000000 !important;
 }
 
 /* SECONDARY */
 .button.contact {
-  background-color: transparent;
-  color: #ff7f50 !important;
+  background-color: #CCDC04;
+  color: #FFFFFF !important;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #CCDC04;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff !important;
+  background-color: #FFFFFF;
+  color: #CCDC04 !important;
 }
 
 .button.contact:active {
   background-color: #000000;
   color: #ffffff !important;
-  border: 2px solid #D8D8D8;
+  border: 2px solid #CCDC04;
 }
 
 /* LOGO STYLING */
