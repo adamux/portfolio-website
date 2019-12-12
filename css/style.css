@@ -1,12 +1,29 @@
 /*
 Colors used:
   Primary Colors
-  Black:  #000000
-  Lime Green: #CCDC04
+  PRIMARY A   Black:  #000000
+  PRIMARY B   Lime Green: #CCDC04
+  PRIMARY C   White: #000000
+
+
 
   Secondary Colors
-  Dark Green: #A7B400
-  */
+  SECONDARY A Grey:
+  SECONDARY B Dark Green: #A7B400
+    */
+.primary_a {
+  color: #000000
+}
+
+.primary_b {
+  color: #CCDC04
+}
+
+.primary_c {
+  color: #FFFFFF
+}
+
+
 
 body {
   background-color: #ffffff;
@@ -68,8 +85,9 @@ a:active {
   /* selected link */
   color: #CCDC04;
 }
+
 /* SECTIONING & PARALAX */
-.highlight{
+.highlight {
   border-top: 5px solid #000000;
 }
 
@@ -88,8 +106,7 @@ a:active {
   border-style: solid;
   border-width: 2px;
   border-color: #000000;
-
-    /* width of the border, type, color */
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -97,7 +114,6 @@ a:active {
   text-decoration: none;
   background-color: #000000;
   color: #FFFFFF !important;
-
 }
 
 .button:active {
@@ -132,7 +148,7 @@ a:active {
 }
 
 /* ICON STYLING */
-  /*SOCILA MEDIA*/
-  .social_icon {
-    width: 50px !important;
+/*SOCILA MEDIA*/
+.social_icon {
+  max-width: 50px !important;
 }
