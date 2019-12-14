@@ -11,6 +11,8 @@ Colors used:
   SECONDARY A Grey:
   SECONDARY B Dark Green: #A7B400
     */
+/*{background:rgba(255,0,0,0.1);} */
+
 .primary_a {
   color: #000000
 }
@@ -23,8 +25,63 @@ Colors used:
   color: #FFFFFF
 }
 
+header {
+  background-color: #FFFFFF;
+  border-bottom: 5px solid: #000000;
+  box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.5);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  }
+
+/* UNIQUE ELEMENT STYLING */
+
+nav {
+  display: block;
+
+}
+
+nav > ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #4a4a4a;
+}
 
 
+footer ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul > li {
+  display: inline-block;
+}
+
+footer ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+/* ELEMTN STYLING */
+
+  * {
+    box-sizing: border-box;
+  }
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -43,12 +100,12 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 1.75em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 1.50em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
@@ -62,7 +119,8 @@ h4 {
 }
 
 img {
-  width: 100%;
+  align: center;
+  width: 90%;
 }
 
 /* LINK BEHAVIOUR START */
@@ -118,7 +176,7 @@ a:active {
 
 .button:active {
   background-color: #CCDC04;
-  border-style: none;
+  border: 2px solid #000000;
   color: #000000 !important;
 }
 
@@ -143,12 +201,66 @@ a:active {
 
 /* LOGO STYLING */
 .logo {
-  width: 300px;
-  max-width: 66%;
+    max-width: 250px;
+    padding-top: 10px;
 }
 
 /* ICON STYLING */
 /*SOCILA MEDIA*/
 .social_icon {
+  padding-top: 10px;
   max-width: 50px !important;
 }
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+/* TEXT ALLIGNMENT */
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* HERO STYLING */
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero_about_me {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 150px;
+}
+
+
+footer {
+  text-align: center;
+
+}
+
+.card {
+  border-radius: 10px;
+  border-width: 5px solid #000000;
+  box-shadow:   2px 2px 3px 0px rgba(50, 50, 50, 0.5);
+  }
+
+  .center {
+  text-align: center
+  }

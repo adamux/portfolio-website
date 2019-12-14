@@ -15,20 +15,20 @@
 
 <body>
   <header>
-    <div>
+    <div class="container">
     <a href="index.html"><img src="img/logo.svg" alt="Logo" class="logo"></a>
       <nav>
         <ul>
-          <li><a href="index.html#my_work">Work</a>
-          <li><a href="about.html">About</a>
-          <li><a href="#contact">Contact</a>
+          <li><a href="index.html#my_work">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <div id="intro">
-      <div>
+    <div id="hero">
+      <div class="container">
         <h1>Hi my name is Adam, <span>I am a UX designer based in Dublin</span></h1>
         <p>
           I am a business professional with wide experience in mentoring and people management on one side, and on the other determined bike-packer and volunteer in NGOs around the world with a focus on improving life of others. 
@@ -38,12 +38,12 @@
         </p>
       </div>
     </div>
-    <divid id="my_work">
-      <div>
+    <div id="my_work">
+      <div class="container">
         <h2>My Work</h2>
         <!--FEATURED WORK_START, CODE CAN BE REPEATED-->
-        <div>
-          <div>
+        <div class="row">
+          <div class="card">
             <picture>
               <source srcset="img/office_quest/OQ_600-400.png" media="(max-width:767px)">
               <img src="img/office_quest/OQ_1200-800.png" alt="My Image">
@@ -60,12 +60,14 @@
             <p>
               Eventually I have chosen to focus on on boarding process in large and enterprise companies, which is currently not personal, boring and falling behind expectations of newbies.
             </p>
+            <div class="center">
             <a href="office_quest.html" target="_self" class="button">Read more</a>
+          </div>
           </div>
         </div>
         <!--FEATURED WORK_END, CODE CAN BE REPEATED-->
         <div>
-          <div>
+          <div class="card">
             <picture>
               <source srcset="img/rapid_tf/rtf_600-400.png" media="(max-width:767px)">
               <img src="img/rapid_tf/rtf_1200-800.png" alt="My Image">
@@ -83,14 +85,16 @@
             <p>
               In weekly runs decisions are made on which ideas will be eliminated, ”parked” for the moment and which will be pushed to further agile production cycle.
             </p>
-            <a href="" class="button">Learn More</a>
+            <div class="center">
+            <a href="" class="button">Read More</a>
+          </div>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Let's work together!</h2>
       <p>
         Do you have something you want to talk to me about?
