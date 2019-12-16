@@ -1,199 +1,85 @@
-
-
 /*
 Colors used:
   Primary Colors
   PRIMARY A   Black:  #000000
   PRIMARY B   Lime Green: #CCDC04
   PRIMARY C   White: #000000
-
-
-
+​
+​
+​
   Secondary Colors
   SECONDARY A Grey:
   SECONDARY B Dark Green: #A7B400
     */
-
-
-
-    * {
-      box-sizing: border-box;
-    }
-
-    h1, h2, h3, h4 {
-      line-height: 1.4;
-    }
-
-    h1 {
-      font-size: 1.75em;
-      font-weight: 500;
-    }
-
-    h2 {
-      font-size: 1.50em;
-      font-weight: 500;
-    }
-
-    h3 {
-      font-size: 1.25em;
-      font-weight: 400;
-    }
-
-    h4 {
-      font-size: 1.35em;
-      font-weight: 400;
-    }
-
-    a {
-      text-decoration: none;
-      color: #A7B400;
-    }
-
-    a:visited {
-      /* visited link */
-      color: #A7B400;
-    }
-
-    a:hover,
-    a:focus {
-      color: #CCDC04;
-      text-decoration: none;
-    }
-
-    a:active {
-      color: #CCDC04;
-    }
-
-    .card {
-      padding: 0.50em;
-      border-radius: 10px;
-      box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.5);
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    .container {
-      padding: 0 15px;
-    }
-
-    .highlight {
-      border-top: 5px solid #000000;
-    }
-
-    .row {
-      margin: 25px 0;
-    }
-
-header {
-  background-color: #FFFFFF;
-  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.5);
-  text-align: left;
-  padding: 10px 10px 5px 10px;
-  position: fixed;
-  width: 100%;
+​
+/* GLOBAL ==========================
+===============================================*/
+* {
+  box-sizing: border-box;
 }
-
-.logo {
-  max-width: 200px;
-  padding-left: 5px;
-}
-
-
-nav {
-  display: block;
-}
-
-nav>ul {
-  display: block;
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 5px;
-}
-
-nav>ul>li {
-  display: inline-block;
-  padding: 0;
-}
-
-nav>ul>li>a {
-  padding: 0 10px;
-  text-transform: uppercase;
+​
+body {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   font-weight: 300;
+  line-height: 1.6;
   color: #4a4a4a;
 }
-
-.menu_link {
-  text-decoration: none;
+​
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+​
+h1 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+​
+h2 {
+  font-size: 1.50em;
+  font-weight: 500;
+}
+​
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+​
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+​
+.center {
+  text-align: center;
+}
+​
+img {
+  width: 100%;
+}
+​
+/* Buttons & Links ==========================
+===============================================*/
+a {
   color: #A7B400;
 }
-
-.menu_link:visited {
+​
+a:visited {
   /* visited link */
   color: #A7B400;
 }
-
-.menu_link:hover,
-.menu_link:focus {
-  color: #000000;
-  font-weight: 700;
+​
+a:hover,
+a:focus {
+  color: #CCDC04;
   text-decoration: none;
 }
-
-.menu_link:active {
+​
+a:active {
   color: #CCDC04;
 }
-
-    body {
-      background-color: #ffffff;
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.6;
-      color: #4a4a4a;
-    }
-
-    main {
-      padding-top: 90px;
-    }
-
-    img {
-      width: 100%;
-    }
-
-
-footer {
-  text-align: center;
-}
-
-footer ul {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-}
-
-footer ul>li {
-  display: inline-block;
-}
-
-footer ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: #4a4a4a;
-}
-
-.social_icon {
-  padding-top: 10px;
-  max-width: 50px !important;
-}
-
-
-/* BUTTONS AND LINKS */
-
-/*PRIMARY */
+​
 .button {
   display: inline-block;
   background-color: #FFFFFF;
@@ -205,50 +91,167 @@ footer ul>li>a {
   border-width: 2px;
   border-color: #000000;
   transition: 0.2s opacity;
+  text-decoration: none;
 }
-
+​
 .button:hover,
 .button:focus {
-  text-decoration: none;
   background-color: #000000;
   color: #FFFFFF !important;
 }
-
+​
 .button:active {
   background-color: #CCDC04;
   border: 2px solid #000000;
   color: #000000 !important;
 }
-
-/* SECONDARY */
+​
 .button.contact {
   background-color: #CCDC04;
   color: #FFFFFF !important;
   text-transform: uppercase;
   border: 2px solid #CCDC04;
 }
-
+​
 .button.contact:hover {
   background-color: #FFFFFF;
   color: #CCDC04 !important;
 }
-
+​
 .button.contact:active {
   background-color: #000000;
   color: #ffffff !important;
   border: 2px solid #CCDC04;
 }
-
+​
+/* Header & Nav ==========================
+===============================================*/
+​
+header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.5);
+  text-align: center;
+  padding: 10px 10px 5px 10px;
+  position: fixed;
+  width: 100%;
+}
+​
+.logo {
+  max-width: 200px;
+  padding-left: 5px;
+}
+​
+nav {
+  display: block;
+}
+​
+nav>ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+​
+nav>ul>li {
+  display: inline-block;
+  padding: 0;
+}
+​
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: none;
+}
+​
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  color: #000000;
+  font-weight: 700;
+}
+​
+nav>ul>li>a:active {
+  color: #CCDC04;
+}
+​
+/* Containers & Columns ==========================
+===============================================*/
+​
+main {
+  padding-top: 90px;
+}
+​
+.container {
+  padding: 0 15px;
+}
+​
+.row {
+  margin: 25px 0;
+}
+​
+/* Footer ==========================
+===============================================*/
+​
+footer {
+  text-align: center;
+}
+​
+footer ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+​
+footer ul>li {
+  display: inline-block;
+}
+​
+footer ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+​
+.social_icon {
+  padding-top: 10px;
+  max-width: 50px;
+}
+​
+/* Content Home ==========================
+===============================================*/
+​
+.highlight {
+  border-top: 5px solid #000000;
+}
+​
+.card {
+  padding: 0.50em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.5);
+}
+​
 #hero h1 {
   text-align: center;
 }
-
+​
 #hero {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
-
+​
+.jump:before {
+    content: "";
+    display: block;
+    padding-top: 120px; /* header height + empty space */
+    margin-top: -120px; /* header height to degrees padding’s space */
+}
+​
+/* Content About ==========================
+===============================================*/
+​
 #hero_about_me {
   padding: 20px 0;
   display: inline-block;
