@@ -11,6 +11,7 @@ Colors used:
   SECONDARY A Grey:
   SECONDARY B Dark Green: #A7B400
     */
+<<<<<<< HEAD
 ​
 /* GLOBAL ==========================
 ===============================================*/
@@ -127,6 +128,88 @@ a:active {
 /* Header & Nav ==========================
 ===============================================*/
 ​
+=======
+
+
+
+    Generic styling
+    Header styling
+    Main styling
+    Footer styling
+
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1, h2, h3, h4 {
+      line-height: 1.4;
+    }
+
+    h1 {
+      font-size: 1.75em;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.50em;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: 1.25em;
+      font-weight: 400;
+    }
+
+    h4 {
+      font-size: 1.35em;
+      font-weight: 400;
+    }
+
+    a {
+      text-decoration: none;
+      color: #A7B400;
+    }
+
+    a:visited {
+      /* visited link */
+      color: #A7B400;
+    }
+
+    a:hover,
+    a:focus {
+      color: #CCDC04;
+      text-decoration: none;
+    }
+
+    a:active {
+      color: #CCDC04;
+    }
+
+    .card {
+      padding: 0.50em;
+      border-radius: 10px;
+      box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .highlight {
+      border-top: 5px solid #000000;
+    }
+
+    .row {
+      margin: 25px 0;
+    }
+
+>>>>>>> parent of edfc6ae... Update style.css
 header {
   background-color: #FFFFFF;
   box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.5);
