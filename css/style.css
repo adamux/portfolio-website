@@ -228,6 +228,12 @@ footer p {
 }
 
 /* ===== CONTENT HOME ===== */
+.animation {
+  min-width: 290px;
+  width: 100%;
+  height:auto;
+}
+
 .highlight {
   border-top: 5px solid #000000;
 }
@@ -372,7 +378,7 @@ X-large devices (1440px or larger)
     transform: translate(100px, 48px);
   }
 }
-}
+
 
 .sun {
   animation-duration: 4s;
