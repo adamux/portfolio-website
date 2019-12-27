@@ -177,6 +177,8 @@ main {
 
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .position {
@@ -184,7 +186,15 @@ main {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 35px 0;
+  padding: 0 0 35px;
+  border-bottom: 1px solid #efefef;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .row::after {
@@ -235,6 +245,7 @@ footer p {
 }
 
 .highlight {
+  margin-top: 55px;
   border-top: 5px solid #000000;
 }
 
@@ -254,6 +265,11 @@ footer p {
   margin-top: -120px; / header height to degrees padding’s space */
 }
 
+.text_block {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 #hero h1 {
   text-align: center;
 }
@@ -269,79 +285,32 @@ footer p {
 }
 
 /* ===== CONTENT ABOUT ME ===== */
+
 #hero_about_me {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-/* =========== MEDIA QUERIES ========== */
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  body {
-    font-size: 18px;
-  }
-
-  h3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 40px;
-  }
-
-  nav>ul {
-    margin: 0;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-}
+.profile_pic .card{
+  line-height: 0 !important;
+  padding-bottom: 0px;
 }
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 58.33%;
-  }
-
-  .col-lg-5 {
-    width: 41.66%;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .position {
-    text-align: right;
-    padding-right: 15px;
-  }
+#my_work h2{
+  text-align: center;
 }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
+/* ===== OFFICE_QUEST ===== */
 
-[class*="col-"] {
-  float: left;
-  padding-left: 20px;
+#office_quest h2{
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#office_quest .text_block {
+    margin-left: 0;
+  text-align: left;
 }
 
 /* =========== ANIMATIONS =========== */
@@ -403,3 +372,72 @@ X-large devices (1440px or larger)
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+
+/* =========== MEDIA QUERIES ========== */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 40px;
+  }
+
+  nav>ul {
+    margin: 0;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 20px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .position {
+    text-align: right;
+    padding-right: 15px;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
