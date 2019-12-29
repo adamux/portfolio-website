@@ -122,14 +122,13 @@ a:active {
 header {
   background-color: #FFFFFF;
   box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.5);
-  text-align: center;
-  padding: 10px 10px 5px 10px;
+  padding: 10px 5px 0px 5px;
   position: fixed;
   width: 100%;
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 150px;
   padding-left: 5px;
 }
 
@@ -146,7 +145,6 @@ nav>ul {
 }
 
 nav>ul>li {
-  display: inline-block;
   padding: 0;
 }
 
@@ -169,9 +167,44 @@ nav>ul>li>a:active {
   color: #CCDC04;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 26px;
+  padding-right: 0px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 10px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  font-weight: 700;
+  padding: 10px 0;
+  border-top: 1px dotted #ccc;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
+
 /* ====== CONTAINERS, ROWS AND COLUMNS ===== */
 main {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 15px;
 }
 
@@ -403,6 +436,10 @@ Medium devices (640px and larger)
     margin: 0;
   }
 
+  nav>ul>li {
+    display: inline-block;
+  }
+
   [class*="col-"] {
     float: left;
     padding-left: 20px;
@@ -411,6 +448,37 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+  .logo {
+    max-width: 200px;
+}
+
+main {
+  padding-top: 90px;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle.responsive nav {
+  padding: 0;
+}
+
+.navtoggle.responsive ul {
+  padding: p;
+}
+.navtoggle.responsive li  {
+  display: inline-block;
+  padding: 0;
+  border-top: none
+}
+
+.navtoggle.responsive li:last-child  {
+  display: none;
 }
 
 /* ==============================

@@ -9,17 +9,20 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="img/favicons/favicon.ico" rel="shortcut icon">
+  <script src="https://kit.fontawesome.com/dc33449462.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
-    <a href="index.html"><img src="img/logo.svg" alt="Logo" class="logo"></a>
+      <div class="navtoggle" id="myNavtoggle">
+      <a href="index.html"><img src="img/logo.svg" alt="Logo" class="logo"></a>
       <nav>
         <ul>
-          <li><a href="index.html#my_work" class="menu_link">Work</a></li>
-          <li><a href="about.html" class="menu_link">About</a></li>
-          <li><a href="#contact" class="menu_link">Contact</a></li>
+          <li><a href="index.html#my_work">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -51,9 +54,9 @@
           <!--CARD_ELEMENT_01_START-->
           <div>
             <div class="highlight">
-            <h2> 01 Field Research </h2>
-            <h3> WHAT'S THE PROBLEM </h3>
-          </div>
+              <h2> 01 Field Research </h2>
+              <h3> WHAT'S THE PROBLEM </h3>
+            </div>
             <p class="text_block">
               Using general insights observation from day to day life I have started looking for challenges in day to day life.Through this process I have realised that onboard experience of most large business is not what most users expect and that
               this more of a source of frustration than anything else.
@@ -323,8 +326,8 @@
       <div>
         <!--BUTTONS_SOCIAL_MEDIA-->
         <ul>
-          <li><a href="https://www.linkedin.com/in/adamux/" target="_self"><img src="img/ic_social_media/002-linkedin.svg"  alt="LinkedIn" class="social_icon"></a></li>
-          <li><a href="https://www.youtube.com/channel/UC_sTKKU2neyA4fvTm0vjU1Q"><img src="img/ic_social_media/007-youtube.svg"  alt="YouTube" class="social_icon"></a></li>
+          <li><a href="https://www.linkedin.com/in/adamux/" target="_self"><img src="img/ic_social_media/002-linkedin.svg" alt="LinkedIn" class="social_icon"></a></li>
+          <li><a href="https://www.youtube.com/channel/UC_sTKKU2neyA4fvTm0vjU1Q"><img src="img/ic_social_media/007-youtube.svg" alt="YouTube" class="social_icon"></a></li>
         </ul>
       </div>
       <div>
@@ -334,6 +337,8 @@
       </div>
     </div>
   </footer>
+  <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
